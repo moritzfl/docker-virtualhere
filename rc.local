@@ -11,11 +11,13 @@
 #
 # By default this script does nothing.
 
-
 echo '*** Listing all usb-devices. Use this list to adjust AllowedDevices in config.ini ...'
 lsusb
 
 cd data
+
+echo '*** Deleting previous bus_usb_*-files from data directory ...'
+find . -name '*bus_usb_*' -delete
 echo '*** Checking for new version of VirtualHere ...'
 wget -N http://www.virtualhere.com/sites/default/files/usbserver/vhusbdx86_64 || echo 'Checking for remote copy of VirtualHere failed'
 
