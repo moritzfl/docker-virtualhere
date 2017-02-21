@@ -12,7 +12,7 @@
 # By default this script does nothing.
 
 echo '*** Listing all usb-devices. Use this list to adjust AllowedDevices in config.ini ...'
-lsusb
+lsusb || echo 'Execution of command lsusb failed. Make sure you have access to USB-Devices on the host.'
 
 cd data
 
