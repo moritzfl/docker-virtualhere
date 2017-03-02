@@ -22,6 +22,6 @@ echo '*** Checking for new version of VirtualHere ...'
 wget -N http://www.virtualhere.com/sites/default/files/usbserver/vhusbdx86_64 || echo 'Checking for remote copy of VirtualHere failed'
 
 chmod +x ./vhusbdx86_64
-./vhusbdx86_64 -b 
+./vhusbdx86_64
 
 exit 0
