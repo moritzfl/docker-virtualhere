@@ -1,4 +1,4 @@
-FROM phusion/baseimage:latest
+FROM ubuntu:16.04
 EXPOSE 7575:7575
 RUN apt-get update
 RUN apt-get install -y wget usbutils
