@@ -1,5 +1,7 @@
 # docker-virtualhere
 
+> Info: This container was tested on and was developed for Linux hosts only! You might be able to convince other hosts to work as well but you are entering uncharted waters on your own risk ;) ...
+
 [VirtualHere](https://www.virtualhere.com/) is a piece of software that allows you to share USB-devices (Scanner, Printer, Mouse, Keyboard etc.) over the network.
 
 VirtualHere itself is not included in the docker-image directly but rather gets downloaded from the authors website upon the first start of the container. It should also auto-update on every restart.
@@ -21,5 +23,3 @@ Otherwise use:
 (Replace "/host/directory" with a valid directory on your host machine)
 
 The trial-license allows you to share one usb-device. For multiple devices and more advanced features (such as traffic-encryption, user-authentication etc.), you will have to purchase a license from the author of VirtualHere. Always support a developers hard work if you think it is worth it!
-
-FINAL NOTE: This is my first shot at a docker-container. So be nice ;). Constructive Feedback is always welcome.
