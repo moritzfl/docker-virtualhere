@@ -10,6 +10,13 @@ While the default port 7575 is exposed per default with this image, the usual Au
 
 Map the /data folder of this container to a folder on your host to get access to the config.ini file that allows you to enter your license information, change different parameters, choose which usb-devices to share etc.
 
+To run on host network use: 
+ $ docker run -d -v /host/directory:/data -p 7575:7575 --privileged --name moritzf-virtualhere moritzf/virtualhere:latest
+Otherwise use:
+ $ docker run -d -v /host/directory:/data --network=host --privileged --name moritzf-virtualhere moritzf/virtualhere:latest
+ 
+ (Replace "/host/directory" with a valid directory on your host machine)
+
 The trial-license allows you to share one usb-device. For multiple devices and more advanced features (such as traffic-encryption, user-authentication etc.), you will have to purchase a license from the author of VirtualHere. Always support a developers hard work if you think it is worth it!
 
 FINAL NOTE: This is my first shot at a docker-container. So be nice ;). Constructive Feedback is always welcome.
