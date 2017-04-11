@@ -14,11 +14,11 @@ Map the /data folder of this container to a folder on your host to get access to
 
 To run on host network use: 
 ~~~~
- $ docker run -d -v /host/directory:/data -p 7575:7575 --privileged --name moritzf-virtualhere moritzf/virtualhere:latest
+$ docker run -d -v /host/directory:/data --network=host --privileged --name moritzf-virtualhere moritzf/virtualhere:latest
 ~~~~
 Otherwise use:
 ~~~~
- $ docker run -d -v /host/directory:/data --network=host --privileged --name moritzf-virtualhere moritzf/virtualhere:latest
+$ docker run -d -v /host/directory:/data -p 7575:7575 --privileged --name moritzf-virtualhere moritzf/virtualhere:latest
 ~~~~
 (Replace "/host/directory" with a valid directory on your host machine)
 
