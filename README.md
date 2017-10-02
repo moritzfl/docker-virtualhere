@@ -2,6 +2,9 @@
 
 > Info: This container was tested on and was developed for Linux hosts only! You might be able to convince other hosts to work as well but you are entering uncharted waters on your own risk ;) ...
 
+![automated](https://img.shields.io/docker/automated/moritzf/virtualhere.svg)
+![pulls](https://img.shields.io/docker/pulls/moritzf/virtualhere.svg)
+
 [VirtualHere](https://www.virtualhere.com/) is a piece of software that allows you to share USB-devices (Scanner, Printer, Mouse, Keyboard etc.) over the network.
 
 VirtualHere itself is not included in the docker-image directly but rather gets downloaded from the authors website upon the first start of the container. It should also auto-update on every restart.
