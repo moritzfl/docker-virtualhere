@@ -2,9 +2,9 @@
 
 > Info: This container was tested on and was developed for Linux hosts only! You might be able to convince other hosts to work as well but you are entering uncharted waters on your own risk ;) ...
 
-![automated](https://img.shields.io/docker/automated/moritzf/virtualhere.svg)
-![build](https://img.shields.io/docker/build/moritzf/virtualhere.svg)
-![pulls](https://img.shields.io/docker/pulls/moritzf/virtualhere.svg)
+[![automated](https://img.shields.io/docker/automated/moritzf/virtualhere.svg)](https://hub.docker.com/r/moritzf/virtualhere/)
+[![build](https://img.shields.io/docker/build/moritzf/virtualhere.svg)](https://hub.docker.com/r/moritzf/virtualhere/)
+[![pulls](https://img.shields.io/docker/pulls/moritzf/virtualhere.svg)](https://hub.docker.com/r/moritzf/virtualhere/)
 
 [VirtualHere](https://www.virtualhere.com/) is a piece of software that allows you to share USB-devices (Scanner, Printer, Mouse, Keyboard etc.) over the network.
 
