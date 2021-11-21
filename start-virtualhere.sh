@@ -5,10 +5,10 @@
 ARCH=`uname -m`
 if [ "$ARCH" = "x86_64" ]
 then
-    echo "Your system architecture was identified as $ARCH. The x86_64 version of the virtualhere-client will be used."
+    echo "Your system architecture was identified as $ARCH."
     ARCH_VR=vhusbdx86_64
 else 
-    echo "Your system architecture was identified as $ARCH. The ARM version of the virtualhere-client will be used."
+    echo "Your system architecture was identified as $ARCH."
     ARCH_VR=vhusbdarm 
 fi
 
