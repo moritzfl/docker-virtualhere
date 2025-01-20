@@ -27,3 +27,10 @@ $ docker run -d -v /host/directory:/data -p 7575:7575 --privileged --name moritz
 (Replace "/host/directory" with a valid directory on your host machine)
 
 The trial-license allows you to share one usb-device. For multiple devices and more advanced features (such as traffic-encryption, user-authentication etc.), you will have to purchase a license from the author of VirtualHere. Always support a developers hard work if you think it is worth it!
+
+# Publish
+
+```bash
+docker buildx build --platform linux/amd64,linux/arm64,linux/arm -t moritzf/virtualhere ./
+docker push moritzf/virtualhere
+```
