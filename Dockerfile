@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:24.04
 EXPOSE 7575:7575
 VOLUME ["/data"]
 RUN apt-get update
