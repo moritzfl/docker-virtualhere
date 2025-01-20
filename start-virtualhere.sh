@@ -3,13 +3,15 @@
 # Script used to setup and run virtualhere
 
 ARCH=`uname -m`
-if [ "$ARCH" = "x86_64" ]
-then
+if [ "$ARCH" = "x86_64" ]; then
     echo "Your system architecture was identified as $ARCH. The x86_64 version of the virtualhere-client will be used."
     ARCH_VR=vhusbdx86_64
-else 
+elif [ "$ARCH" = "aarch64" ]; then
+    echo "Your system architecture was identified as $ARCH. The ARM64 version of the virtualhere-client will be used."
+    ARCH_VR=vhusbdarm64
+else
     echo "Your system architecture was identified as $ARCH. The ARM version of the virtualhere-client will be used."
-    ARCH_VR=vhusbdarm 
+    ARCH_VR=vhusbdarm
 fi
 
 echo '*** Listing all usb-devices. Use this list to adjust AllowedDevices in config.ini ...'
